@@ -1,12 +1,16 @@
 import React from 'react';
 import SellerNav from '../../Shared/SellerNav/SellerNav';
 import { Outlet } from 'react-router-dom';
+import './SellerLayout.css'
 
 const SellerLayout = () => {
     return (
         <div>
             <SellerNav></SellerNav>
-            <Outlet></Outlet>
+            <div className="seller-layout">
+            <Outlet ></Outlet>
+            </div>
+
             
         </div>
     );

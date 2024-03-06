@@ -60,7 +60,7 @@
   }
   
   .open {
-    background-color: #207cca;
+    background-color: #333;
   }
   
   .show {
@@ -69,15 +69,20 @@
   
   /* Media Queries */
   @media screen and (max-width: 768px) {
+    .nav-container {
+        transition: transform 0.3s ease-in-out;
+    }
     .nav-links {
-      width: 100%;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      background-color: #333;
-      flex-direction: column;
-      text-align: center;
-      display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        height: 100rem;
+        
     }
   
     .nav-links.show {
@@ -86,10 +91,12 @@
   
     .toggle-btn {
       display: flex;
+      
     }
   
     .bar {
       transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      background-color: #fff;
     }
   
     .open .bar:nth-child(1) {

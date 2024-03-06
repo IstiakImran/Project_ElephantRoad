@@ -12,8 +12,8 @@ import AuthPage from './Pages/AuthPage/AuthPage';
 import SellerLayout from './Layout/SellerLayout/SellerLayout';
 import SellerInfo from './Seller/SellerInfo/SellerInfo';
 import ShopInfo from './Seller/ShopInfo/ShopInfo';
-import ProductInfo from './Seller/ProductInfo/ProductInfo';
-import ProductLists from './Seller/ProductLists/ProductLists';
+import ProductInfo from './Seller/Products/ProductInfo/ProductInfo';
+import ProductLists from './Seller/Products/ProductLists/ProductLists';
 
 const Router = () => {
     const router = createBrowserRouter([
