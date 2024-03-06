@@ -11,7 +11,7 @@ const ShoeDetail = ({ shoe }) => {
         brand: 'Sample Brand',
         description: 'This is a sample shoe description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         price: 59.99,
-        image: 'sample-image.jpg',
+        image: 'https://placehold.co/600x400',
         color: 'Red',
         sizesAvailable: ['US 7', 'US 8', 'US 9', 'US 10'],
         shop: {

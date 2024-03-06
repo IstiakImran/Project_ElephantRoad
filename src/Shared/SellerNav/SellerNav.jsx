@@ -1,10 +1,10 @@
-// Navbar.js
+// SellerNav.js
 
 import React, { useState } from 'react';
-import './Navbar.css';
+import './SellerNav.css';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const SellerNav = () => {
   const [isNavOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -12,14 +12,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${isNavOpen ? 'open' : ''}`}>
+    <nav className={`SellerNav ${isNavOpen ? 'open' : ''}`}>
       <div className="nav-container">
         <div className="logo">Your Logo</div>
         <div className={`nav-links ${isNavOpen ? 'show' : ''}`}>
           <Link to="/">Home</Link>
-          <a href="#">Products</a>
-          <a href="#">About</a>
-          <Link to="/auth">Log In/Sign Up</Link>
+          <Link to="profile">Profile</Link>
+          <Link to="shop">Shop</Link>
+          <Link to="products">Products</Link>
+          <button>
+          <Link to="add-product">Add Product</Link>
+          </button>    
         </div>
         <div className="toggle-btn" onClick={toggleNav}>
           <div className={`bar ${isNavOpen ? 'open' : ''}`} />
@@ -31,4 +34,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SellerNav;
