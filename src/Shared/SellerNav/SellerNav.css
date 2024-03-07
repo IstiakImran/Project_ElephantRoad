@@ -6,15 +6,17 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200px;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out;
+    height: 100rem;
   }
   
-  .nav-container {
+  .SellerNav-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -26,15 +28,16 @@
     text-decoration: none;
   }
   
-  .nav-links {
+  .SellerNav-links {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 50%;
+    align-items: flex-start;
+    width: 180px;
     transition: transform 0.3s ease-in-out;
+    flex-direction: column;
   }
   
-  .nav-links a {
+  .SellerNav-links a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
