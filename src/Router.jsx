@@ -30,6 +30,15 @@ import SupportAndHelpCenter from './Seller/SupportAndHelpCenter/SupportAndHelpCe
 import NotificationCenter from './Seller/NotificationCenter/NotificationCenter';
 import FeedbackAndRatings from './Seller/FeedbackAndRatings/FeedbackAndRatings';
 import OrderDetails from './Seller/Orders/OrderDetails/OrderDetails';
+import BlogPage from './Pages/BlogPage/BlogPage';
+import CheckoutPage from './Pages/CheckoutPage/CheckoutPage';
+import NotificationsPage from './Pages/NotificationsPage/NotificationsPage';
+import OrderConfirmationPage from './Pages/OrderConfirmationPage/OrderConfirmationPage';
+import PrivacyPolicyAndTermsPage from './Pages/PrivacyPolicyAndTermsPage/PrivacyPolicyAndTermsPage';
+import SellerReviewsPage from './Pages/SellerReviewsPage/SellerReviewsPage';
+import ShoppingCartPage from './Pages/ShoppingCartPage/ShoppingCartPage';
+import UserAccountPage from './Pages/UserAccountPage/UserAccountPage';
+import WishlistPage from './Pages/WishlistPage/WishlistPage';
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -54,6 +63,46 @@ const Router = () => {
           {
             path: "/shops/:id",
             element: <ShopPage></ShopPage>
+          },
+          {
+            path: '/product-listings',
+            element: <ProductListings />,
+          },
+          {
+            path: '/shopping-cart',
+            element: <ShoppingCartPage />,
+          },
+          {
+            path: '/checkout',
+            element: <CheckoutPage />,
+          },
+          {
+            path: '/order-confirmation',
+            element: <OrderConfirmationPage />,
+          },
+          {
+            path: '/user-account',
+            element: <UserAccountPage />,
+          },
+          {
+            path: '/wishlist',
+            element: <WishlistPage />,
+          },
+          {
+            path: '/seller-reviews',
+            element: <SellerReviewsPage />,
+          },
+          {
+            path: '/blog',
+            element: <BlogPage />,
+          },
+          {
+            path: '/privacy-policy-terms',
+            element: <PrivacyPolicyAndTermsPage />,
+          },
+          {
+            path: '/notifications',
+            element: <NotificationsPage />,
           },
         ],
       },

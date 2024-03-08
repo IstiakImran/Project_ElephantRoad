@@ -17,8 +17,17 @@ const Navbar = () => {
         <div className="logo">Your Logo</div>
         <div className={`nav-links ${isNavOpen ? 'show' : ''}`}>
           <Link to="/">Home</Link>
-          <a href="#">Products</a>
-          <a href="#">About</a>
+          
+          <Link to="/product-listings">Product Listings</Link>
+          <Link to="/shopping-cart">Shopping Cart</Link>
+          <Link to="/checkout">Checkout</Link>
+          <Link to="/order-confirmation">Order Confirmation</Link>
+          <Link to="/user-account">User Account</Link>
+          <Link to="/wishlist">Wishlist</Link>
+          <Link to="/seller-reviews">Seller Reviews</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/privacy-policy-terms">Privacy Policy & Terms</Link>
+          <Link to="/notifications">Notifications</Link>
           <Link to="/auth">Log In/Sign Up</Link>
         </div>
         <div className="toggle-btn" onClick={toggleNav}>

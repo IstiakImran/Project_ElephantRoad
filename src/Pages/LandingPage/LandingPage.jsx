@@ -4,7 +4,7 @@ import React from 'react';
 
 import './LandingPage.css'; // Import a CSS file for styling
 import ShoeCard from '../../Components/ShoeCard/ShoeCard';
-import Navbar from '../../Shared/Navbar/Navbar';
+import Carousel from '../../Components/Carousel/Carousel';
 
 const mockupData = [
   {
@@ -97,7 +97,7 @@ const mockupData = [
 const LandingPage = () => {
   return (
     <>
-    <Navbar></Navbar>
+    <Carousel></Carousel>
     <div className="landing-page">
       <header className="header">
         <h1>Welcome to Our Shoe Store</h1>
